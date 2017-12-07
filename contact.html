@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <title>Rachel Friend - Portfolio</title>
+    
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+</head>
+<body>
+
+<div class="header">
+   
+    <img src="images/transparent_logo2.png" alt="logo" style="max-width: 100%; height: 100%;"/>
+
+</div>
+
+<div class="navigation">
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>   
+  <li style="float:right"><a href="http://twitter.com/rachelafriend" class="fa fa-twitter"></a></li> 
+  <li style="float:right"><a href="http://instagram.com/therachelfriend" class="fa fa-instagram"></a></li>   
+</ul>
+</div>
+    <br><br>
+    <div class="w3-container">
+    <div class="w3-card-4 constrain">
+    
+    <div class="w3-row"> <b>To contact me, please leave your information below:</b></div>
+       
+   
+    <div class="w3-row">
+       <div class="w3-col m4 18">
+        <form class="w3-container" action="#" id="dataform">
+            <p>
+                <label class="w3-label w3-text-black">First Name
+                <input class="w3-input w3-border" name="first" id="first" type="text" onblur="checkFirst()"></label>
+            </p>
+            
+            <p>
+                <label class="w3-label w3-text-black">Last Name
+                <input class="w3-input w3-border" name="last" id="last" type="text" onblur="checkLast()"></label>
+            </p>
+            
+            <p>
+                <label class="w3-label w3-text-black">Email (ex. info@example.com)
+                <input class="w3-input w3-border" name="email" id="email" type="text" onblur="checkEmail()"></label>
+            </p>
+            
+            <p>
+                <label class="w3-label w3-text-black">Phone Number (ex. (999) 999-9999)
+                <input class="w3-input w3-border" name="phone" id="phone" type="text" onblur="checkPhone()"></label>
+            </p>
+            
+        
+            <p>
+                <label class="w3-label w3-text-black">Address, City, State (ex. 123 Main St., Chicago, IL)
+                <input class="w3-input w3-border" name="address" id="address" type="text" onblur="checkAddress()"></label>
+            </p>
+            
+            <p>
+                <button class="w3-btn" type="reset">Reset</button>
+                <button class="w3-btn" type="submit">Contact</button>
+            </p>
+            
+        </form>
+    </div>
+    <br>
+    <div class="w3-col m4 14">
+        <p id="errorMsg">&nbsp;</p>
+    </div>
+</div> 
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <h5>©Rachel Friend</h5>
+</div>
+<script src="myscript.js"></script>
+</body>
+
+</html>
